@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f6f8fb">
+    <meta name="description" content="导入原始图像与 OCR JSON，按原始坐标查看识别结果、叠加比较并导出图片。">
+    <title>OCR 对照台 · 让识别结果一目了然</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' rx='12' fill='%231677ff'/%3E%3Cpath d='M12 20v-8h8m8 0h8v8m0 8v8h-8m-8 0h-8v-8M18 24h12' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="./styles.css">
+    <script type="module" src="./app.js"></script>
+  </head>
+  <body>
+    <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="i-scan" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5m0 8v5h-5M8 21H3v-5M7 12h10"/></symbol>
+      <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V3m-5 5 5-5 5 5M4 16v5h16v-5"/></symbol>
+      <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8" r="1.5"/><path d="m3 17 6-6 4 4 3-3 5 5"/></symbol>
+      <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-14-2 16"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 10 6-10 6L2 9l10-6Zm-9 11 9 5 9-5M3 18l9 5 9-5"/></symbol>
+      <symbol id="i-columns" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M12 4v16"/></symbol>
+      <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v13m-5-5 5 5 5-5M4 16v5h16v-5"/></symbol>
+      <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+      <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+      <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+      <symbol id="i-fit" viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5m0 8v5h-5M8 21H3v-5m4-9h10v10H7z"/></symbol>
+      <symbol id="i-move" viewBox="0 0 24 24"><path d="M12 2v20M2 12h20M8 6l4-4 4 4M8 18l4 4 4-4M6 8l-4 4 4 4m12-8 4 4-4 4"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
+      <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-11v1"/></symbol>
+      <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="13" height="13" rx="2"/><path d="M16 8V3H3v13h5"/></symbol>
+    </svg>
+
+    <header class="app-header">
+      <a href="./" class="brand" aria-label="OCR 对照台首页">
+        <span class="brand-mark"><svg><use href="#i-scan"/></svg></span>
+        <span class="brand-name">OCR <strong>对照台</strong><small>SEE WHAT YOUR OCR SEES</small></span>
+      </a>
+      <div class="header-divider"></div>
+      <span class="workspace-name">文档识别工作台 <span class="version">BETA</span></span>
+      <div class="header-actions">
+        <span class="privacy"><span class="status-dot"></span>本地处理 · 文件不上传</span>
+        <button class="button quiet" id="load-example"><svg><use href="#i-image"/></svg><span>查看示例</span></button>
+        <button class="button primary" id="open-import"><svg><use href="#i-upload"/></svg><span>导入文件</span></button>
+      </div>
+    </header>
+
+    <div class="app-layout">
+      <aside class="sidebar" aria-label="识别结果侧栏">
+        <section class="source-section">
+          <div class="section-eyebrow"><span>当前文档</span><span class="small-tag" id="document-tag">示例</span></div>
+          <button class="document-card" id="change-document" title="更换图片或识别结果">
+            <span class="document-thumbnail"><img id="document-thumbnail" alt="当前原始图像缩略图"></span>
+            <span class="document-info"><strong id="image-name">幼稚园普法讲座报名表.png</strong><span id="image-dimensions">正在载入…</span><span class="document-type">IMAGE + OCR JSON</span></span>
+            <svg class="chevron"><use href="#i-chevron"/></svg>
+          </button>
+          <div class="document-stats"><span><i class="blue-dot"></i><b id="word-count">0</b> 个识别区域</span><span id="json-status"><svg><use href="#i-check"/></svg>JSON 已就绪</span></div>
+        </section>
+
+        <div class="results-heading"><h2>识别文字 <span id="result-count">0</span></h2><button class="icon-button" id="copy-all" title="复制全部文字" aria-label="复制全部文字"><svg><use href="#i-copy"/></svg></button></div>
+        <div class="search-wrap"><svg><use href="#i-search"/></svg><input id="search" type="search" placeholder="搜索识别文字…" aria-label="搜索识别文字"><kbd>/</kbd></div>
+        <div class="results-list" id="results-list" aria-label="识别文字列表"></div>
+        <div class="selection-detail" id="selection-detail">
+          <div class="detail-heading"><span>区域详情</span><span id="selected-index">点击文字查看</span></div>
+          <p id="selected-text">选择一个识别区域，检查文字与原图位置。</p>
+          <div class="coordinates" id="coordinates" hidden></div>
+        </div>
+        <div class="sidebar-footer"><svg><use href="#i-shield"/></svg>图像与识别数据仅在你的浏览器中处理</div>
+      </aside>
+
+      <main class="workspace">
+        <div class="workspace-heading">
+          <div><div class="section-eyebrow">DOCUMENT INSPECTOR</div><h1>每一处识别，都有据可对。</h1></div>
+          <button class="button export-button" id="export"><svg><use href="#i-download"/></svg><span>导出视图</span><span class="export-format">PNG</span></button>
+        </div>
+        <section class="viewer" aria-label="OCR 图像对比">
+          <div class="viewer-toolbar">
+            <div class="view-tabs" role="tablist" aria-label="查看模式">
+              <button class="view-tab active" data-mode="overlay" role="tab" aria-selected="true"><svg><use href="#i-layers"/></svg>叠加对比</button>
+              <button class="view-tab" data-mode="text" role="tab" aria-selected="false"><svg><use href="#i-code"/></svg>识别结果</button>
+              <button class="view-tab" data-mode="original" role="tab" aria-selected="false"><svg><use href="#i-image"/></svg>原始图像</button>
+              <button class="view-tab" data-mode="split" role="tab" aria-selected="false"><svg><use href="#i-columns"/></svg>并排对照</button>
+            </div>
+            <button class="icon-button sidebar-toggle" id="toggle-sidebar" aria-label="显示或隐藏识别列表" title="显示或隐藏识别列表"><svg><use href="#i-columns"/></svg></button>
+          </div>
+          <div class="display-controls">
+            <label class="color-control" title="识别文字颜色"><input id="text-color" type="color" value="#1677ff" aria-label="识别文字颜色"><span>识别文字</span></label>
+            <span class="control-separator"></span>
+            <label class="opacity-control" for="opacity"><span>不透明度</span><input id="opacity" type="range" min="0" max="100" value="100"><output id="opacity-value">100%</output></label>
+            <span class="control-separator bounds-separator"></span>
+            <label class="checkbox-control"><input type="checkbox" id="show-bounds"><span>显示识别框</span></label>
+            <span class="mode-note" id="mode-note"><i class="blue-dot"></i>原图 + 识别文字</span>
+          </div>
+          <div class="viewport" id="viewport">
+            <div class="stage" id="stage">
+              <div class="paper-wrap"><span class="paper-label" id="primary-label">OVERLAY / 叠加对比</span><div class="paper" id="primary-paper"><canvas id="primary-canvas" aria-label="OCR 对比图像"></canvas><div class="regions" id="primary-regions" aria-label="图像识别区域"></div></div></div>
+              <div class="paper-wrap secondary-wrap" id="secondary-wrap" hidden><span class="paper-label">OCR RESULT / 识别结果</span><div class="paper" id="secondary-paper"><canvas id="secondary-canvas" aria-label="按原图坐标排版的识别文字"></canvas><div class="regions" id="secondary-regions" aria-label="识别文字区域"></div></div></div>
+            </div>
+            <div class="loading-indicator" id="loading">正在载入示例文档…</div>
+          </div>
+          <div class="viewer-footer">
+            <div class="viewer-hint"><svg><use href="#i-move"/></svg><span>拖动画布移动 <span class="hint-divider">·</span> Ctrl / ⌘ + 滚轮缩放</span></div>
+            <div class="zoom-controls">
+              <button class="icon-button" id="zoom-out" title="缩小" aria-label="缩小">−</button>
+              <button id="zoom-actual" class="zoom-value" title="点击以 100% 查看">100%</button>
+              <button class="icon-button" id="zoom-in" title="放大" aria-label="放大">+</button>
+              <span class="control-separator"></span>
+              <button class="fit-button" id="zoom-fit" title="适应画布"><svg><use href="#i-fit"/></svg><span>适应画布</span></button>
+            </div>
+          </div>
+        </section>
+        <div class="workspace-footer"><span><span class="status-dot"></span><span id="status-text">正在准备工作台</span></span><span id="coordinate-note">坐标以原图像素为基准</span></div>
+      </main>
+    </div>
+
+    <dialog id="import-dialog" aria-labelledby="import-title">
+      <form id="import-form">
+        <div class="dialog-header"><div><span class="section-eyebrow">NEW COMPARISON</span><h2 id="import-title">导入你的识别文档</h2><p>一张原图，一份 JSON。把识别结果放回原位。</p></div><button type="button" class="icon-button" id="close-import" aria-label="关闭"><svg><use href="#i-close"/></svg></button></div>
+        <div class="import-body">
+          <div class="import-step"><span class="step-number">01</span><div><h3>原始图像</h3><span>支持 PNG、JPG、WebP 等浏览器可读取的图片</span></div></div>
+          <label class="drop-zone" id="image-drop"><input id="image-file" type="file" accept="image/*"><svg><use href="#i-image"/></svg><span id="image-file-label">点击选择，或拖入原始图像</span><small id="image-file-detail">使用图片的原始尺寸匹配 OCR 坐标</small></label>
+          <div class="import-step json-step"><span class="step-number">02</span><div><h3>OCR 识别结果</h3><span>导入 JSON 文件，或直接粘贴内容</span></div><label class="json-file-button"><svg><use href="#i-upload"/></svg>选择 JSON<input id="json-file" type="file" accept=".json,application/json"></label></div>
+          <div class="json-editor"><div class="editor-heading"><span id="json-file-label">识别数据.json</span><span>JSON</span></div><textarea id="json-input" spellcheck="false" aria-label="OCR JSON 数据" placeholder='{&#10;  "words_result": [&#10;    {&#10;      "words": "识别文字",&#10;      "location": {&#10;        "top": 23, "left": 1031,&#10;        "width": 66, "height": 30&#10;      }&#10;    }&#10;  ]&#10;}'></textarea></div>
+          <p class="import-error" id="import-error" role="alert" hidden></p>
+        </div>
+        <div class="dialog-footer"><span><svg><use href="#i-shield"/></svg>文件在本地处理</span><button type="button" class="button" id="cancel-import">取消</button><button type="submit" class="button primary" id="apply-import">开始对比<svg><use href="#i-chevron"/></svg></button></div>
+      </form>
+    </dialog>
+    <div class="toast" id="toast" role="status" hidden></div>
+  </body>
+</html>

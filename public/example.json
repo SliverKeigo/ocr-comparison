@@ -1,0 +1,1039 @@
+{
+  "words_result": [
+    {
+      "words": "Ww",
+      "location": {
+        "top": 5,
+        "left": 700,
+        "width": 22,
+        "height": 12
+      }
+    },
+    {
+      "words": "6",
+      "location": {
+        "top": 23,
+        "left": 746,
+        "width": 24,
+        "height": 31
+      }
+    },
+    {
+      "words": "法務局",
+      "location": {
+        "top": 55,
+        "left": 110,
+        "width": 165,
+        "height": 57
+      }
+    },
+    {
+      "words": "2026/2027學年",
+      "location": {
+        "top": 113,
+        "left": 111,
+        "width": 160,
+        "height": 20
+      }
+    },
+    {
+      "words": "幼稚園普法講座",
+      "location": {
+        "top": 65,
+        "left": 348,
+        "width": 393,
+        "height": 59
+      }
+    },
+    {
+      "words": "報名表",
+      "location": {
+        "top": 73,
+        "left": 776,
+        "width": 178,
+        "height": 51
+      }
+    },
+    {
+      "words": "學校名稱:",
+      "location": {
+        "top": 177,
+        "left": 73,
+        "width": 104,
+        "height": 25
+      }
+    },
+    {
+      "words": "石排灣公立",
+      "location": {
+        "top": 168,
+        "left": 227,
+        "width": 199,
+        "height": 43
+      }
+    },
+    {
+      "words": "學校地址:",
+      "location": {
+        "top": 225,
+        "left": 72,
+        "width": 104,
+        "height": 23
+      }
+    },
+    {
+      "words": "路環石 洲八大馬路 cnbo 吧",
+      "location": {
+        "top": 218,
+        "left": 225,
+        "width": 584,
+        "height": 42
+      }
+    },
+    {
+      "words": "聯絡人姓名:",
+      "location": {
+        "top": 273,
+        "left": 71,
+        "width": 112,
+        "height": 22
+      }
+    },
+    {
+      "words": "家",
+      "location": {
+        "top": 264,
+        "left": 226,
+        "width": 37,
+        "height": 34
+      }
+    },
+    {
+      "words": "聯絡電話:",
+      "location": {
+        "top": 319,
+        "left": 71,
+        "width": 96,
+        "height": 22
+      }
+    },
+    {
+      "words": "8998566, 8599899",
+      "location": {
+        "top": 310,
+        "left": 225,
+        "width": 248,
+        "height": 38
+      }
+    },
+    {
+      "words": "傳真:",
+      "location": {
+        "top": 323,
+        "left": 576,
+        "width": 53,
+        "height": 22
+      }
+    },
+    {
+      "words": "289388136",
+      "location": {
+        "top": 311,
+        "left": 674,
+        "width": 142,
+        "height": 40
+      }
+    },
+    {
+      "words": "幼稚園普法講座主題",
+      "location": {
+        "top": 362,
+        "left": 72,
+        "width": 220,
+        "height": 26
+      }
+    },
+    {
+      "words": "年級",
+      "location": {
+        "top": 407,
+        "left": 81,
+        "width": 41,
+        "height": 22
+      }
+    },
+    {
+      "words": "主題",
+      "location": {
+        "top": 407,
+        "left": 205,
+        "width": 41,
+        "height": 22
+      }
+    },
+    {
+      "words": "內容",
+      "location": {
+        "top": 412,
+        "left": 519,
+        "width": 43,
+        "height": 22
+      }
+    },
+    {
+      "words": "幼一",
+      "location": {
+        "top": 440,
+        "left": 81,
+        "width": 42,
+        "height": 20
+      }
+    },
+    {
+      "words": "守規小達人",
+      "location": {
+        "top": 440,
+        "left": 182,
+        "width": 94,
+        "height": 22
+      }
+    },
+    {
+      "words": "-認識日常生活中的基本規則",
+      "location": {
+        "top": 442,
+        "left": 433,
+        "width": 229,
+        "height": 23
+      }
+    },
+    {
+      "words": "-學習禮貌用語的重要性",
+      "location": {
+        "top": 467,
+        "left": 433,
+        "width": 194,
+        "height": 20
+      }
+    },
+    {
+      "words": "-培養遵守秩序的好習慣",
+      "location": {
+        "top": 492,
+        "left": 433,
+        "width": 196,
+        "height": 20
+      }
+    },
+    {
+      "words": "幼二",
+      "location": {
+        "top": 522,
+        "left": 81,
+        "width": 42,
+        "height": 21
+      }
+    },
+    {
+      "words": "正義小超人",
+      "location": {
+        "top": 522,
+        "left": 181,
+        "width": 95,
+        "height": 21
+      }
+    },
+    {
+      "words": "-認識財物的法律",
+      "location": {
+        "top": 525,
+        "left": 433,
+        "width": 144,
+        "height": 22
+      }
+    },
+    {
+      "words": "-學習誠實守信及分享",
+      "location": {
+        "top": 550,
+        "left": 433,
+        "width": 184,
+        "height": 21
+      }
+    },
+    {
+      "words": "-認識承擔責任",
+      "location": {
+        "top": 576,
+        "left": 433,
+        "width": 126,
+        "height": 20
+      }
+    },
+    {
+      "words": "幼三",
+      "location": {
+        "top": 603,
+        "left": 81,
+        "width": 42,
+        "height": 20
+      }
+    },
+    {
+      "words": "小小護旗手",
+      "location": {
+        "top": 603,
+        "left": 181,
+        "width": 95,
+        "height": 20
+      }
+    },
+    {
+      "words": "-認識祖國",
+      "location": {
+        "top": 608,
+        "left": 433,
+        "width": 89,
+        "height": 22
+      }
+    },
+    {
+      "words": "-學習國旗、國徽、國歌",
+      "location": {
+        "top": 634,
+        "left": 433,
+        "width": 197,
+        "height": 22
+      }
+    },
+    {
+      "words": "-認識澳門基本法",
+      "location": {
+        "top": 660,
+        "left": 433,
+        "width": 144,
+        "height": 20
+      }
+    },
+    {
+      "words": "幼稚園普法講座類型:",
+      "location": {
+        "top": 704,
+        "left": 69,
+        "width": 218,
+        "height": 26
+      }
+    },
+    {
+      "words": "類型",
+      "location": {
+        "top": 748,
+        "left": 81,
+        "width": 41,
+        "height": 22
+      }
+    },
+    {
+      "words": "項目",
+      "location": {
+        "top": 748,
+        "left": 162,
+        "width": 39,
+        "height": 22
+      }
+    },
+    {
+      "words": "所需時間",
+      "location": {
+        "top": 748,
+        "left": 251,
+        "width": 78,
+        "height": 22
+      }
+    },
+    {
+      "words": "上課地點",
+      "location": {
+        "top": 752,
+        "left": 382,
+        "width": 74,
+        "height": 22
+      }
+    },
+    {
+      "words": "學校需提供的設備",
+      "location": {
+        "top": 752,
+        "left": 574,
+        "width": 147,
+        "height": 22
+      }
+    },
+    {
+      "words": "備註",
+      "location": {
+        "top": 757,
+        "left": 861,
+        "width": 37,
+        "height": 22
+      }
+    },
+    {
+      "words": "·模式一",
+      "location": {
+        "top": 785,
+        "left": 73,
+        "width": 72,
+        "height": 22
+      }
+    },
+    {
+      "words": "講座",
+      "location": {
+        "top": 785,
+        "left": 153,
+        "width": 44,
+        "height": 22
+      }
+    },
+    {
+      "words": "一節課",
+      "location": {
+        "top": 785,
+        "left": 251,
+        "width": 58,
+        "height": 22
+      }
+    },
+    {
+      "words": "學校教室/禮堂",
+      "location": {
+        "top": 789,
+        "left": 359,
+        "width": 119,
+        "height": 22
+      }
+    },
+    {
+      "words": "電腦、喇叭、投影機、投影幕、",
+      "location": {
+        "top": 791,
+        "left": 526,
+        "width": 243,
+        "height": 22
+      }
+    },
+    {
+      "words": "線咪、無線滑鼠、翻頁筆",
+      "location": {
+        "top": 816,
+        "left": 526,
+        "width": 205,
+        "height": 22
+      }
+    },
+    {
+      "words": "講座",
+      "location": {
+        "top": 845,
+        "left": 158,
+        "width": 39,
+        "height": 22
+      }
+    },
+    {
+      "words": "學校教室/禮堂",
+      "location": {
+        "top": 847,
+        "left": 357,
+        "width": 120,
+        "height": 22
+      }
+    },
+    {
+      "words": "電腦、喇叭、投影機、投影幕、",
+      "location": {
+        "top": 851,
+        "left": 526,
+        "width": 240,
+        "height": 22
+      }
+    },
+    {
+      "words": "線咪、無線滑鼠、翻頁筆",
+      "location": {
+        "top": 876,
+        "left": 526,
+        "width": 205,
+        "height": 22
+      }
+    },
+    {
+      "words": "模式二",
+      "location": {
+        "top": 882,
+        "left": 78,
+        "width": 66,
+        "height": 22
+      }
+    },
+    {
+      "words": "一小時",
+      "location": {
+        "top": 885,
+        "left": 257,
+        "width": 60,
+        "height": 22
+      }
+    },
+    {
+      "words": "互動遊戲",
+      "location": {
+        "top": 904,
+        "left": 157,
+        "width": 80,
+        "height": 23
+      }
+    },
+    {
+      "words": "攤位",
+      "location": {
+        "top": 929,
+        "left": 158,
+        "width": 40,
+        "height": 20
+      }
+    },
+    {
+      "words": "禮堂/雨天操場",
+      "location": {
+        "top": 907,
+        "left": 355,
+        "width": 120,
+        "height": 22
+      }
+    },
+    {
+      "words": "桌子(3張)、椅子(4張)",
+      "location": {
+        "top": 909,
+        "left": 525,
+        "width": 219,
+        "height": 23
+      }
+    },
+    {
+      "words": "每一攤位須配置一名",
+      "location": {
+        "top": 912,
+        "left": 812,
+        "width": 168,
+        "height": 22
+      }
+    },
+    {
+      "words": "學校人員協助運作",
+      "location": {
+        "top": 937,
+        "left": 812,
+        "width": 149,
+        "height": 22
+      }
+    },
+    {
+      "words": "預約幼稚園普法講座:",
+      "location": {
+        "top": 990,
+        "left": 69,
+        "width": 219,
+        "height": 26
+      }
+    },
+    {
+      "words": "日期",
+      "location": {
+        "top": 1045,
+        "left": 138,
+        "width": 37,
+        "height": 20
+      }
+    },
+    {
+      "words": "限每同一或周三上午!",
+      "location": {
+        "top": 1063,
+        "left": 101,
+        "width": 127,
+        "height": 14
+      }
+    },
+    {
+      "words": "時間",
+      "location": {
+        "top": 1052,
+        "left": 285,
+        "width": 40,
+        "height": 21
+      }
+    },
+    {
+      "words": "年級",
+      "location": {
+        "top": 1054,
+        "left": 422,
+        "width": 41,
+        "height": 21
+      }
+    },
+    {
+      "words": "人數",
+      "location": {
+        "top": 1055,
+        "left": 547,
+        "width": 41,
+        "height": 21
+      }
+    },
+    {
+      "words": "舉行方式",
+      "location": {
+        "top": 1045,
+        "left": 661,
+        "width": 84,
+        "height": 23
+      }
+    },
+    {
+      "words": "講座",
+      "location": {
+        "top": 1072,
+        "left": 654,
+        "width": 38,
+        "height": 17
+      }
+    },
+    {
+      "words": "座+互動遊戲攤位(最多可提供4個攤位)",
+      "location": {
+        "top": 1075,
+        "left": 723,
+        "width": 250,
+        "height": 16
+      }
+    },
+    {
+      "words": "72",
+      "location": {
+        "top": 1099,
+        "left": 36,
+        "width": 25,
+        "height": 20
+      }
+    },
+    {
+      "words": "20-6 年2月7日",
+      "location": {
+        "top": 1102,
+        "left": 70,
+        "width": 151,
+        "height": 19
+      }
+    },
+    {
+      "words": "A230",
+      "location": {
+        "top": 1088,
+        "left": 172,
+        "width": 64,
+        "height": 18
+      }
+    },
+    {
+      "words": "15: 3",
+      "location": {
+        "top": 1088,
+        "left": 241,
+        "width": 58,
+        "height": 16
+      }
+    },
+    {
+      "words": "11oc",
+      "location": {
+        "top": 1089,
+        "left": 326,
+        "width": 47,
+        "height": 16
+      }
+    },
+    {
+      "words": "14: 55",
+      "location": {
+        "top": 1104,
+        "left": 242,
+        "width": 52,
+        "height": 17
+      }
+    },
+    {
+      "words": "至15: 35",
+      "location": {
+        "top": 1104,
+        "left": 298,
+        "width": 76,
+        "height": 17
+      }
+    },
+    {
+      "words": "工1",
+      "location": {
+        "top": 1105,
+        "left": 422,
+        "width": 28,
+        "height": 20
+      }
+    },
+    {
+      "words": "25",
+      "location": {
+        "top": 1101,
+        "left": 549,
+        "width": 28,
+        "height": 20
+      }
+    },
+    {
+      "words": "区",
+      "location": {
+        "top": 1105,
+        "left": 661,
+        "width": 18,
+        "height": 21
+      }
+    },
+    {
+      "words": "¥:需要",
+      "location": {
+        "top": 1111,
+        "left": 750,
+        "width": 63,
+        "height": 20
+      }
+    },
+    {
+      "words": "個攤位",
+      "location": {
+        "top": 1112,
+        "left": 844,
+        "width": 42,
+        "height": 16
+      }
+    },
+    {
+      "words": "12",
+      "location": {
+        "top": 1136,
+        "left": 36,
+        "width": 29,
+        "height": 21
+      }
+    },
+    {
+      "words": "2027 年1月牛日",
+      "location": {
+        "top": 1136,
+        "left": 70,
+        "width": 152,
+        "height": 19
+      }
+    },
+    {
+      "words": "-Ai70",
+      "location": {
+        "top": 1119,
+        "left": 158,
+        "width": 61,
+        "height": 20
+      }
+    },
+    {
+      "words": "14155",
+      "location": {
+        "top": 1142,
+        "left": 241,
+        "width": 52,
+        "height": 17
+      }
+    },
+    {
+      "words": "至4535",
+      "location": {
+        "top": 1142,
+        "left": 298,
+        "width": 74,
+        "height": 17
+      }
+    },
+    {
+      "words": "工2",
+      "location": {
+        "top": 1143,
+        "left": 422,
+        "width": 28,
+        "height": 20
+      }
+    },
+    {
+      "words": "41",
+      "location": {
+        "top": 1140,
+        "left": 549,
+        "width": 28,
+        "height": 20
+      }
+    },
+    {
+      "words": "√",
+      "location": {
+        "top": 1143,
+        "left": 659,
+        "width": 22,
+        "height": 24
+      }
+    },
+    {
+      "words": "¥:需要",
+      "location": {
+        "top": 1148,
+        "left": 750,
+        "width": 63,
+        "height": 20
+      }
+    },
+    {
+      "words": "個攤位",
+      "location": {
+        "top": 1149,
+        "left": 844,
+        "width": 42,
+        "height": 16
+      }
+    },
+    {
+      "words": "7友-2026年1月12日",
+      "location": {
+        "top": 1174,
+        "left": 28,
+        "width": 193,
+        "height": 22
+      }
+    },
+    {
+      "words": "10: 45",
+      "location": {
+        "top": 1176,
+        "left": 245,
+        "width": 51,
+        "height": 17
+      }
+    },
+    {
+      "words": "至1125",
+      "location": {
+        "top": 1176,
+        "left": 300,
+        "width": 73,
+        "height": 17
+      }
+    },
+    {
+      "words": "√",
+      "location": {
+        "top": 1173,
+        "left": 388,
+        "width": 15,
+        "height": 24
+      }
+    },
+    {
+      "words": "工3",
+      "location": {
+        "top": 1176,
+        "left": 422,
+        "width": 29,
+        "height": 20
+      }
+    },
+    {
+      "words": "41",
+      "location": {
+        "top": 1176,
+        "left": 550,
+        "width": 27,
+        "height": 20
+      }
+    },
+    {
+      "words": "√",
+      "location": {
+        "top": 1177,
+        "left": 658,
+        "width": 23,
+        "height": 25
+      }
+    },
+    {
+      "words": "¥:需要",
+      "location": {
+        "top": 1184,
+        "left": 750,
+        "width": 63,
+        "height": 20
+      }
+    },
+    {
+      "words": "個攤位",
+      "location": {
+        "top": 1186,
+        "left": 844,
+        "width": 42,
+        "height": 16
+      }
+    },
+    {
+      "words": "年 月 日",
+      "location": {
+        "top": 1207,
+        "left": 127,
+        "width": 92,
+        "height": 20
+      }
+    },
+    {
+      "words": "至",
+      "location": {
+        "top": 1211,
+        "left": 301,
+        "width": 16,
+        "height": 17
+      }
+    },
+    {
+      "words": "¥:需要",
+      "location": {
+        "top": 1219,
+        "left": 750,
+        "width": 63,
+        "height": 20
+      }
+    },
+    {
+      "words": "個攤位",
+      "location": {
+        "top": 1220,
+        "left": 844,
+        "width": 42,
+        "height": 16
+      }
+    },
+    {
+      "words": "年 月 日",
+      "location": {
+        "top": 1243,
+        "left": 126,
+        "width": 95,
+        "height": 21
+      }
+    },
+    {
+      "words": "至",
+      "location": {
+        "top": 1246,
+        "left": 300,
+        "width": 16,
+        "height": 17
+      }
+    },
+    {
+      "words": "需要",
+      "location": {
+        "top": 1255,
+        "left": 774,
+        "width": 42,
+        "height": 20
+      }
+    },
+    {
+      "words": "個攤位",
+      "location": {
+        "top": 1256,
+        "left": 844,
+        "width": 42,
+        "height": 16
+      }
+    },
+    {
+      "words": "終章料渣的電話: 87957611(岑小姐)或87957641(王小姐)",
+      "location": {
+        "top": 1276,
+        "left": 101,
+        "width": 448,
+        "height": 20
+      }
+    },
+    {
+      "words": "傳真號碼: 28712513",
+      "location": {
+        "top": 1280,
+        "left": 550,
+        "width": 166,
+        "height": 20
+      }
+    },
+    {
+      "words": "電郵地址: ddjrp@dsaj.gov.mo",
+      "location": {
+        "top": 1280,
+        "left": 717,
+        "width": 240,
+        "height": 22
+      }
+    },
+    {
+      "words": "網上報名",
+      "location": {
+        "top": 1328,
+        "left": 206,
+        "width": 72,
+        "height": 19
+      }
+    },
+    {
+      "words": "備註:",
+      "location": {
+        "top": 1316,
+        "left": 323,
+        "width": 38,
+        "height": 18
+      }
+    },
+    {
+      "words": "1.報名時請以整個年級為單位",
+      "location": {
+        "top": 1318,
+        "left": 376,
+        "width": 227,
+        "height": 18
+      }
+    },
+    {
+      "words": "2.講座名額有限，按學校提交申請的順序安排，先到先得",
+      "location": {
+        "top": 1336,
+        "left": 376,
+        "width": 402,
+        "height": 12
+      }
+    }
+  ]
+}
